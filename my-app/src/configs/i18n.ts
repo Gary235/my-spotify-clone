@@ -8,7 +8,7 @@ export const locales = {
 const DEFAULT_LOCALE = locales.ES;
 
 i18next.init({
-  // initImmediate: false,
+  initImmediate: false,
   fallbackLng: DEFAULT_LOCALE,
   lng: DEFAULT_LOCALE,
 });

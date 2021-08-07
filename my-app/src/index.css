@@ -1,6 +1,37 @@
+@font-face {
+  font-family: 'Circular';
+  src: local('Circular'), url('./assets/fonts/circular_book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CircularItalic';
+  src: local('CircularItalic'), url('./assets/fonts/circular_bookItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CircularMedium';
+  src: local('CircularMedium'), url('./assets/fonts/circular_medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'CircularMediumItalic';
+  src: local('CircularMediumItalic'), url('./assets/fonts/circular_mediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CircularBold';
+  src: local('CircularBold'), url('./assets/fonts/circular_bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CircularBoldItalic';
+  src: local('CircularBoldItalic'), url('./assets/fonts/circular_boldItalic.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Circular;
+  font-family: 62.5%;
 }
 
