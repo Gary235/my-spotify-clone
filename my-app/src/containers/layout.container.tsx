@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react';
-import styled from 'styled-components';
+import React, { FunctionComponent } from "react";
+import styled from "styled-components";
 
 const Layout = styled.div`
   background: #f5f8f7;

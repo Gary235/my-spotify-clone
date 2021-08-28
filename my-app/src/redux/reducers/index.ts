@@ -1,4 +1,4 @@
-import accessTokenReducer from './access_token.reducer';
+import accessTokenReducer from "./access_token.reducer";
 
 export default {
   accessTokenReducer,

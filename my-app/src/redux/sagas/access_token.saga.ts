@@ -1,4 +1,4 @@
-import { all, call, put, takeLatest } from 'redux-saga/effects';
+import { all, call, put, takeLatest } from "redux-saga/effects";
 
 import { getAccessToken as getAccessTokenApi } from "api/actions";
 import constants from "../constants/access_token.constants";

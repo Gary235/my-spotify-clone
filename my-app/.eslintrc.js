@@ -16,16 +16,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-plusplus': 'off',
     'react/jsx-props-no-spreading': 'off',
-    indent: ['error', 2],
-    'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    'no-console': 'warn',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
-    ],
-    '@typescript-eslint/explicit-function-return-type': 'warn',
-    'no-empty': 'warn',
   },
   settings: {
     'import/resolver': {

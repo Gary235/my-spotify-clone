@@ -1,12 +1,12 @@
-import React, { FunctionComponent, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { Switch, Redirect, Route } from 'react-router-dom';
+import React, { FunctionComponent, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { Switch, Redirect, Route } from "react-router-dom";
 
-import { onGetAccessToken } from 'redux/dispatch_actions/access_token.d_actions';
+import { onGetAccessToken } from "redux/dispatch_actions/access_token.d_actions";
 
-import LayoutContainer from 'containers/layout.container';
+import LayoutContainer from "containers/layout.container";
 
-import './styles.css';
+import "./styles.css";
 
 const App: FunctionComponent = () => {
   const dispatch = useDispatch();

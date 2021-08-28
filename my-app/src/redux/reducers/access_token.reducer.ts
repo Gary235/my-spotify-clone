@@ -1,11 +1,11 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent } from "react";
 
 import { IAccessToken } from "types/access_token.type";
 import constants from "../constants/access_token.constants";
 
 const defaultState: IAccessToken = {
-  accessToken: '',
-  tokenType: '',
+  accessToken: "",
+  tokenType: "",
   expiresIn: 0,
 };
 
@@ -15,14 +15,14 @@ const accessTokenReducer: FunctionComponent<any> = (
 ) => {
   const { data, type } = action;
   switch (type) {
-  case constants.ACCESS_TOKEN_SUCCESS:
-    return {
-      ...state,
-      accessToken: data.access_token,
-    };
-  case constants.ACCESS_TOKEN_ERROR:
-  default:
-    return state;
+    case constants.ACCESS_TOKEN_SUCCESS:
+      return {
+        ...state,
+        accessToken: data.access_token,
+      };
+    case constants.ACCESS_TOKEN_ERROR:
+    default:
+      return state;
   }
 };
 
