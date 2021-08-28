@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router } from 'react-router';
+import { Provider } from 'react-redux';
+import history from "helpers/history";
+import store from "./redux/store";
+
+import reportWebVitals from "./reportWebVitals";
 
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-
 import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  // eslint-disable-next-line no-undef
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>, // eslint-disable-next-line no-undef
   document.getElementById('root')
 );
 
