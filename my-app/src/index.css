@@ -28,10 +28,5 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Circular;
-  font-family: 62.5%;
+  font-family: Circular, sans-serif;
 }
-
