@@ -5,7 +5,7 @@ export const locales = {
   ES: "es-AR",
 };
 
-const DEFAULT_LOCALE = locales.ES;
+const DEFAULT_LOCALE = locales.EN;
 
 i18next.init({
   initImmediate: false,

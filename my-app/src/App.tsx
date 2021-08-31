@@ -20,6 +20,7 @@ const App: FunctionComponent = () => {
       <Switch>
         <Redirect exact from="/" to="/home" />
         <Route path="/home" component={LayoutContainer} />
+        <Route component={LayoutContainer} />
       </Switch>
     </>
   );
