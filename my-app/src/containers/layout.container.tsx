@@ -13,11 +13,16 @@ const Layout = styled.div`
 `;
 
 const LayoutContainer: FunctionComponent<any> = () => {
-  const location = useLocation().pathname.split("/").slice(1); // Deletes the first position of the array, that is always empty
+  const defaultLocation = ["home"];
+  const currentLocation = useLocation().pathname;
+
+  const myLocation = currentLocation
+    ? currentLocation.split("/").slice(1)
+    : defaultLocation; // Deletes the first position of the array, that is always empty
 
   return (
     <Layout>
-      <SideMenuContainer playlists={[]} currentLocation={location} />
+      <SideMenuContainer playlists={[]} currentLocation={myLocation} />
     </Layout>
   );
 };
