@@ -17,8 +17,8 @@ const LayoutContainer: FunctionComponent<any> = () => {
   const currentLocation = useLocation().pathname;
 
   const myLocation = currentLocation
-    ? currentLocation.split("/").slice(1)
-    : defaultLocation; // Deletes the first position of the array, that is always empty
+    ? currentLocation.split("/").slice(1) // Deletes the first position of the array, that is always empty
+    : defaultLocation;
 
   return (
     <Layout>

@@ -8,6 +8,8 @@
   ## Endpoints:
     https://developer.spotify.com/documentation/web-api/reference/
 
+  ## SDK MUSIC:
+    https://developer.spotify.com/documentation/web-playback-sdk/reference/#initializing-the-sdk
 # React-Redux
   ## Docs:
     https://react-redux.js.org/introduction/getting-started
