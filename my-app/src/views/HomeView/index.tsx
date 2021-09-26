@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 // import i18next from "i18next";
 
-import PlayerComponent from "components/common/Player";
+// import PlayerComponent from "components/common/Player";
 
 import { Container } from "./styles";
 import { IHomeViewProps } from "./types";
@@ -12,7 +12,8 @@ const HomeView: FunctionComponent<IHomeViewProps> = (props: IHomeViewProps) => {
 
   return (
     <Container>
-      <PlayerComponent token={token} />
+      {/* <PlayerComponent token={token} /> */}
+      {token}
     </Container>
   );
 };

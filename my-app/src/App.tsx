@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { Switch, Redirect, Route } from "react-router-dom";
 
 import { onGetAuthUser } from "redux/dispatch_actions/auth_user.d_actions";
-// import { onGetAccessToken } from "redux/dispatch_actions/access_token.d_actions";
 
 import HomeContainer from "containers/home.container";
 
@@ -13,10 +12,6 @@ const App: FunctionComponent = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(onGetAuthUser());
-    // const selectCode = (state: any) => state.authUserReducer.code;
-    // const code = useSelector(selectCode);
-
-    // dispatch(onGetAccessToken(code));
   }, [dispatch]);
 
   return (

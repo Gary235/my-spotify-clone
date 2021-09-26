@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 
 import { IAuthUser } from "types/auth_user.type";
-import constants from "../constants/access_token.constants";
+import constants from "../constants/auth_user.constants";
 
 const defaultState: IAuthUser = {
   code: null,
@@ -14,13 +14,13 @@ const authUserReducer: FunctionComponent<any> = (
 ) => {
   const { data, type } = action;
   switch (type) {
-    case constants.ACCESS_TOKEN_SUCCESS:
+    case constants.AUTH_USER_SUCCESS:
       return {
         ...state,
         code: data.code,
         state: data.state,
       };
-    case constants.ACCESS_TOKEN_ERROR:
+    case constants.AUTH_USER_ERROR:
     default:
       return state;
   }
