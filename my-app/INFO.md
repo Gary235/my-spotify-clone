@@ -1,3 +1,5 @@
+General info for the project
+
 # Spotify Api
   ## Dev Dashboard:
     https://developer.spotify.com/dashboard/applications
